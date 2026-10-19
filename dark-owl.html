@@ -1,0 +1,52 @@
+
+
+<header>
+  <div id="logo">DARK<span>OWL</span></div>
+  <div class="sp"></div>
+  <button class="ico" title="مفاتيح API">🔑</button>
+  <button class="ico" title="عن الأداة">?</button>
+  <button class="ico" title="السجل">🕘</button>
+</header>
+
+<div id="search">
+  <input id="q" placeholder="يوزر · إيميل · دومين · IP · هاتف · هاش · محفظة · كلمة" autocomplete="off" spellcheck="false">
+  <button id="go">بحث</button>
+</div>
+<div id="kind"></div>
+
+<nav id="nav"></nav>
+<main id="main"></main>
+
+<div id="toast"></div>
+
+<div class="modal" id="m-keys"><div>
+  <h2>🔑 مفاتيح API (اختيارية — ترفع الدقة)</h2>
+  <div class="mut" style="font-size:12px;margin-bottom:12px">كلها مجانية. تبقى في جهازك فقط، مشفّرة.</div>
+  <div class="f"><label>VirusTotal</label><input id="k-vt" placeholder="اختياري"></div>
+  <div class="f"><label>Shodan</label><input id="k-shodan" placeholder="اختياري"></div>
+  <div class="f"><label>HaveIBeenPwned</label><input id="k-hibp" placeholder="اختياري"></div>
+  <div class="f"><label>Etherscan</label><input id="k-eth" placeholder="اختياري"></div>
+  <div class="f"><label>GitHub Token</label><input id="k-gh" placeholder="اختياري — يرفع حد الطلبات"></div>
+  <div class="f"><label>كلمة تشفير السجل</label><input id="k-pass" type="password" placeholder="اختياري"></div>
+  <div class="f"><label>وسيط CORS مفضّل</label><select id="k-proxy"></select></div>
+  <div style="display:flex;gap:8px;margin-top:14px">
+    <button class="ico" style="width:auto;padding:9px 18px;background:var(--acc);color:#04110c;font-weight:600">حفظ</button>
+    <button class="ico" style="width:auto;padding:9px 18px">إغلاق</button>
+    <button class="ico" style="width:auto;padding:9px 18px">مسح الكل</button>
+  </div>
+</div></div>
+
+<div class="modal" id="m-about"><div>
+  <h2>🦉 DARKOWL</h2>
+  <div style="font-size:13px;line-height:2">
+  <p><b>ما هي:</b> منصة استخبارات مفتوحة (OSINT) تعمل بالكامل في متصفحك. لا سيرفر، لا تنصيب، لا Termux.</p>
+  <p><b>الخصوصية:</b> لا يوجد أي سيرفر وسيط لنا — طلباتك تذهب مباشرة للمصدر أو عبر وسيط CORS عام. لا كوكيز ولا تتبّع ولا خطوط خارجية.</p>
+  <p><b>التشفير:</b> السجل ومفاتيح API تُشفَّر بـ AES-GCM في جهازك بمفتاح مشتق من كلمتك (PBKDF2 · 200k دورة).</p>
+  <p><b>المصادر:</b> أكثر من 90 مصدر: DNS-over-HTTPS، RDAP، الشهادات، الأرشيف، تيليجرام، شبكة Tor، منصات الكسر، بلوكشين، سجلات ثغرات.</p>
+  <p><b>ملاحظة:</b> بعض المصادر تحتاج وسيط CORS. عند الفشل تُجرَّب 5 وسطاء تلقائياً.</p>
+  </div>
+  <div style="margin-top:14px"><button class="ico" style="width:auto;padding:9px 18px">تم</button></div>
+</div></div>
+
+
+
